@@ -1,0 +1,1 @@
+{"appName":"rollouts","userGivenName":"rollouts","destNamespace":"dan-a-eks","destServer":"https://kubernetes.default.svc","srcPath":"apps/rollouts/overlays/dan-a-eks","srcRepoURL":"https://github.com/danamzulescu-codefresh/eks-runtime.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component","codefresh_io_internal":"true"}}
