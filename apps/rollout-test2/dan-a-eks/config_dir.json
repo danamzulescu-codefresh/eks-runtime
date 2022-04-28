@@ -1,0 +1,15 @@
+{
+  "appName": "rollout-test2",
+  "userGivenName": "rollout-test2",
+  "destNamespace": "dan-a-eks",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "rollout-test1",
+  "srcRepoURL": "https://github.com/danamzulescu-codefresh/rollout-test.git",
+  "srcTargetRevision": "main",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "exclude": "",
+  "include": ""
+}
