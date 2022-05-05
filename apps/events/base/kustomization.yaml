@@ -5,4 +5,4 @@ images:
   newTag: v1.6.3
 kind: Kustomization
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.328
+- github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.337
