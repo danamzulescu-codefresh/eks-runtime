@@ -3,7 +3,7 @@
   "userGivenName": "applications",
   "destNamespace": "dan-a-eks",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "/applications/dev",
+  "srcPath": "applications/dev/",
   "srcRepoURL": "https://github.com/danamzulescu-codefresh/dan-a-eks-csdp-resources.git",
   "srcTargetRevision": "main",
   "labels": {
