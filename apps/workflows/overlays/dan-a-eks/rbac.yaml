@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: <service-account-name> # for example, workflow
+  name: workflow-service-account # for example, workflow
   annotations: # change below as needed 
     s3.amazonaws.com/role-arn: arn:aws:iam::336151728602:role/dan-a-s3-access-role # example s3.amazonaws.com/role-arn = arn:aws:iam::559963890471:role/argo-workflows-s3-artifact-repo
 ---
