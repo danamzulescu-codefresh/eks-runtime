@@ -11,3 +11,22 @@ patches:
 resources:
 - ../../base
 - ingress.yaml
+- rbac.yaml         # created earlier as part of this process
+- artifact-repo.yaml # created earlier as part of this process
+patchesStrategicMerge:
+  - |
+    apiVersion: v1
+    kind: ServiceAccount
+    metadata:
+      name: argo-server
+      annotations:
+        s3.amazonaws.com/role-arn: arn:aws:iam::336151728602:role/dan-a-s3-access-role  # must be identical to annotation of the service account in rbac.yaml file
+  - |
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: workflow-controller-configmap
+    data:
+      workflowDefaults: |
+        spec:
+          serviceAccountName: workflow-service-account # must be identical to the service account name in rbac.yaml   
