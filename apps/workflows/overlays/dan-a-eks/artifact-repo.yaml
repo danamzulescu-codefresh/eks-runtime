@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  annotations:
+    workflows.argoproj.io/default-artifact-repository: default-v1
+  name: artifact-repositories
+data:
+  default-v1: |
+    archiveLogs: true #enable pipeline logging
+    s3:
+      bucket: dan-a-csdp-artifact-repository #change as needed
+      endpoint: s3.amazonaws.com #change as needed
+      region: us-east-1 #change as needed
+      useSDKCreds: true
