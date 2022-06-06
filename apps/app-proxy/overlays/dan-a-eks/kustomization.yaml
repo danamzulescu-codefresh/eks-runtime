@@ -6,6 +6,8 @@ configMapGenerator:
   - cfHost=https://g.codefresh.io
   - cors=https://g.codefresh.io
   - env=production
+  - graphqlDebug=true
+  - graphqlPlayground=true
   name: cap-app-proxy-cm
 kind: Kustomization
 namespace: dan-a-eks
