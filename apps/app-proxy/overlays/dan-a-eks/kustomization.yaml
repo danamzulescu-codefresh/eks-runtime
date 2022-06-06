@@ -14,3 +14,8 @@ namespace: dan-a-eks
 resources:
 - ../../base
 - ingress.yaml
+
+images:
+  - name: quay.io/codefresh/cap-app-proxy
+    newName: quay.io/noam_codefresh/cap-app-proxy
+    newTag: dan
