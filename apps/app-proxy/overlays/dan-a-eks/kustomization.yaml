@@ -8,14 +8,10 @@ configMapGenerator:
   - env=production
   - graphqlDebug=true
   - graphqlPlayground=true
+  - argoCdInsecure=true
   name: cap-app-proxy-cm
 kind: Kustomization
 namespace: dan-a-eks
 resources:
 - ../../base
 - ingress.yaml
-
-images:
-  - name: quay.io/codefresh/cap-app-proxy
-    newName: quay.io/noam_codefresh/cap-app-proxy
-    newTag: dan
