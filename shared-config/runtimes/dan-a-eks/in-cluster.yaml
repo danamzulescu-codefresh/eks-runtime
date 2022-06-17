@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    codefresh.io/entity: internal-config
+    codefresh.io/internal: "true"
+  name: in-cluster
+spec:
+  destination:
+    namespace: dan-a-eks
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    directory:
+      include: '{all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/dan-a-eks/*.yaml,runtimes/dan-a-eks/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml}'
+      recurse: true
+    path: shared-config/resources
+    repoURL: https://github.com/danamzulescu-codefresh/eks-runtime.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - allowEmpty=true
