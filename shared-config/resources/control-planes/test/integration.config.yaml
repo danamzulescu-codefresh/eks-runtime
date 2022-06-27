@@ -4,6 +4,7 @@ metadata:
   name: test
   labels:
     codefresh.io/entity: integration-config
-    codefresh.io/integration-type: registry.dockerhub
+    codefresh.io/integration-type: registry.quay
 data:
-  username: red
+  domain: 'https://quay.io'
+  username: red2
