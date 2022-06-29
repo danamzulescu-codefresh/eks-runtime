@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simle-example-test
+  labels:
+    codefresh.io/entity: git-source
+    codefresh.io/internal: 'false'
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: git-sources
+  source:
+    repoURL: https://github.com/danamzulescu-codefresh/argocd-example-apps.git
+    path: helm-guestbook
+    targetRevision: HEAD
+    directory:
+      include: '*'
+      exclude: ''
+      recurse: true
+  destination:
+    namespace: codefresh-default
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      prune: true
+      selfHeal: true
