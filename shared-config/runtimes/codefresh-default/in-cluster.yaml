@@ -13,7 +13,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-default/*.yaml,runtimes/codefresh-default/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,codefresh-default/simle-example-test.yaml}
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-default/*.yaml,runtimes/codefresh-default/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/danamzulescu-codefresh/eks-runtime.git
