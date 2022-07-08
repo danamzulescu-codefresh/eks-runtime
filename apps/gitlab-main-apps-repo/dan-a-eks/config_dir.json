@@ -1,0 +1,15 @@
+{
+  "appName": "gitlab-main-apps-repo",
+  "userGivenName": "gitlab-main-apps-repo",
+  "destNamespace": "dan-a-eks",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "ArgoCD-Definitions/Dev-Dan/Applications",
+  "srcRepoURL": "https://gitlab.com/dan.amzulescu/argocd-demo-repo.git",
+  "srcTargetRevision": "",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "exclude": "",
+  "include": ""
+}
