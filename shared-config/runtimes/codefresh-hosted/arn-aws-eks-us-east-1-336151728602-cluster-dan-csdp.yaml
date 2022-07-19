@@ -5,7 +5,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
   labels:
     codefresh.io/entity: internal-config
-    codefresh.io/internal: "true"
+    codefresh.io/internal: 'true'
   name: arn-aws-eks-us-east-1-336151728602-cluster-dan-csdp
 spec:
   destination:
@@ -14,7 +14,8 @@ spec:
   project: default
   source:
     directory:
-      include: '{all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-hosted/*.yaml,runtimes/codefresh-hosted/**/*.yaml}'
+      include: >-
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-hosted/*.yaml,runtimes/codefresh-hosted/**/*.yaml,codefresh-hosted-managed-cluster-arn-aws-eks-us-east-1-336151728602-cluster-dan-csdp-cm.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/danamzulescu-codefresh/eks-runtime.git
@@ -25,4 +26,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - allowEmpty=true
+      - allowEmpty=true
