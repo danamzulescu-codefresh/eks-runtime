@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: arn-aws-eks-us-east-1-336151728602-cluster-dan-csdp-rollouts
+  labels:
+    codefresh.io/entity: component
+    codefresh.io/internal: "false"
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: csdp
+  source:
+    repoURL: https://github.com/codefresh-io/csdp-official.git
+    path: csdp/base/argo-rollouts
+    targetRevision: latest-managed
+  destination:
+    namespace: default
+    server: https://4E425FDA9D1D3A4897DBC755E086276F.gr7.us-east-1.eks.amazonaws.com
+  syncPolicy:
+    automated:
+      allowEmpty: true
+      prune: true
+      selfHeal: true

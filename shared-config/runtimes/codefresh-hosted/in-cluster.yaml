@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-hosted/*.yaml,runtimes/codefresh-hosted/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,codefresh-hosted/default-git-source.yaml}
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/codefresh-hosted/*.yaml,runtimes/codefresh-hosted/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,codefresh-hosted/default-git-source.yaml,codefresh-hosted/arn-aws-eks-us-east-1-336151728602-cluster-dan-csdp-rollouts.yaml,codefresh-hosted/arn-aws-eks-us-east-1-336151728602-cluster-dan-csdp-rollout-reporter.yaml}
       recurse: true
     path: shared-config/resources
     repoURL: https://github.com/danamzulescu-codefresh/eks-runtime.git
