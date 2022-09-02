@@ -18,4 +18,4 @@ images:
 kind: Kustomization
 namespace: dan-a-eks
 resources:
-- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.492
+- github.com/codefresh-io/cli-v2/manifests/argo-cd?ref=v0.0.500
