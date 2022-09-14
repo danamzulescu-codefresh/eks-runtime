@@ -9,46 +9,36 @@ data:
       name: dan-a-eks
       namespace: dan-a-eks
     spec:
+      accessMode: ""
       bootstrapSpecifier: github.com/codefresh-io/cli-v2/manifests/argo-cd
       cluster: https://4E425FDA9D1D3A4897DBC755E086276F.gr7.us-east-1.eks.amazonaws.com
       components:
-      - isInternal: false
-        name: events
-        syncWave: 0
+      - name: events
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.506
+        url: github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.516
         wait: true
-      - isInternal: false
-        name: rollouts
-        syncWave: 0
+      - name: rollouts
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-rollouts?ref=v0.0.506
-        wait: false
-      - isInternal: false
-        name: workflows
-        syncWave: 0
+        url: github.com/codefresh-io/cli-v2/manifests/argo-rollouts?ref=v0.0.516
+      - name: workflows
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-workflows?ref=v0.0.506
-        wait: false
-      - isInternal: false
-        name: app-proxy
+        url: github.com/codefresh-io/cli-v2/manifests/argo-workflows?ref=v0.0.516
+      - name: app-proxy
         syncWave: 9
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/app-proxy?ref=v0.0.506
-        wait: false
-      - isInternal: false
-        name: sealed-secrets
-        syncWave: 0
+        url: github.com/codefresh-io/cli-v2/manifests/app-proxy?ref=v0.0.516
+      - name: sealed-secrets
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/sealed-secrets?ref=v0.0.506
-        wait: false
-      defVersion: 1.0.1
+        url: github.com/codefresh-io/cli-v2/manifests/sealed-secrets?ref=v0.0.516
+      - feature: ingressless
+        name: codefresh-tunnel-client
+        type: helm
+        url: github.com/codefresh-io/codefresh-tunnel-charts/codefresh-tunnel-client?ref=0.1.1
+      defVersion: 2.0.0
       ingressClassName: nginx
-      ingressController: ""
       ingressHost: https://dan-noam-test.sa.cf-cd.com
-      internalIngressHost: ""
       repo: https://github.com/danamzulescu-codefresh/eks-runtime
-      version: 0.0.506
+      version: 0.0.516
 kind: ConfigMap
 metadata:
   creationTimestamp: null
