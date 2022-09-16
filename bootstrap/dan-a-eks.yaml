@@ -15,30 +15,26 @@ data:
       components:
       - name: events
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.516
+        url: github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.519
         wait: true
       - name: rollouts
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-rollouts?ref=v0.0.516
+        url: github.com/codefresh-io/cli-v2/manifests/argo-rollouts?ref=v0.0.519
       - name: workflows
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-workflows?ref=v0.0.516
+        url: github.com/codefresh-io/cli-v2/manifests/argo-workflows?ref=v0.0.519
       - name: app-proxy
         syncWave: 9
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/app-proxy?ref=v0.0.516
+        url: github.com/codefresh-io/cli-v2/manifests/app-proxy?ref=v0.0.519
       - name: sealed-secrets
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/sealed-secrets?ref=v0.0.516
-      - feature: ingressless
-        name: codefresh-tunnel-client
-        type: helm
-        url: github.com/codefresh-io/codefresh-tunnel-charts/codefresh-tunnel-client?ref=0.1.1
+        url: github.com/codefresh-io/cli-v2/manifests/sealed-secrets?ref=v0.0.519
       defVersion: 2.0.0
       ingressClassName: nginx
       ingressHost: https://dan-noam-test.sa.cf-cd.com
       repo: https://github.com/danamzulescu-codefresh/eks-runtime
-      version: 0.0.516
+      version: 0.0.519
 kind: ConfigMap
 metadata:
   creationTimestamp: null
