@@ -1,0 +1,16 @@
+{
+  "appName": "dan-a-eks-main-appsets-repo",
+  "userGivenName": "dan-a-eks-main-appsets-repo",
+  "destNamespace": "dan-a-eks",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "ArgoCD-Definitions/Dev-Dan/ApplicationSets",
+  "srcRepoURL": "https://github.com/danamzulescu-codefresh/argocd-demo-repo.git",
+  "srcTargetRevision": "",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "annotations": null,
+  "exclude": "",
+  "include": ""
+}
