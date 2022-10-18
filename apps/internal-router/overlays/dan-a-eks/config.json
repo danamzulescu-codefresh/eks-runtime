@@ -1,0 +1,16 @@
+{
+  "appName": "internal-router",
+  "userGivenName": "internal-router",
+  "destNamespace": "dan-a-eks",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/internal-router/overlays/dan-a-eks",
+  "srcRepoURL": "https://github.com/danamzulescu-codefresh/eks-runtime.git",
+  "srcTargetRevision": "",
+  "labels": {
+    "codefresh_io_entity": "component",
+    "codefresh_io_internal": "true"
+  },
+  "annotations": {
+    "argocd_argoproj_io_sync-wave": "10"
+  }
+}
