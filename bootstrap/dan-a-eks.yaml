@@ -34,11 +34,11 @@ data:
       - name: sealed-secrets
         type: kustomize
         url: github.com/codefresh-io/cli-v2/manifests/sealed-secrets
-      defVersion: 2.1.0
+      defVersion: 2.1.1
       ingressClassName: nginx
       ingressHost: https://dan-noam-test.sa.cf-cd.com
       repo: https://github.com/danamzulescu-codefresh/eks-runtime
-      version: 0.0.547
+      version: 0.0.549
 kind: ConfigMap
 metadata:
   creationTimestamp: null
