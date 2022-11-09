@@ -5,4 +5,4 @@ images:
   newTag: v1.6.3
 kind: Kustomization
 resources:
-- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-events?ref=0.1.9
+- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-events?ref=0.1.12

@@ -14,4 +14,4 @@ configMapGenerator:
 kind: Kustomization
 namespace: dan-a-eks
 resources:
-- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-cd?ref=0.1.9
+- github.com/codefresh-io/csdp-official/csdp/hybrid/basic/apps/argo-cd?ref=0.1.12
