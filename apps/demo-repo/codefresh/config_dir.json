@@ -1,0 +1,16 @@
+{
+  "appName": "demo-repo",
+  "userGivenName": "demo-repo",
+  "destNamespace": "codefresh",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": ".",
+  "srcRepoURL": "https://github.com/danamzulescu-codefresh/argocd-demo-repo.git",
+  "srcTargetRevision": "https://github.com/danamzulescu-codefresh/argocd-demo-repo/tree/main/ArgoCD-Definitions/Dev-Dan",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "annotations": null,
+  "exclude": "",
+  "include": ""
+}
