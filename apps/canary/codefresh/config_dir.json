@@ -1,0 +1,16 @@
+{
+  "appName": "canary",
+  "userGivenName": "canary",
+  "destNamespace": "codefresh",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "ArgoCD-Definitions/Dev-Dan/Applications/official-rollouts-demo",
+  "srcRepoURL": "https://github.com/danamzulescu-codefresh/argocd-demo-repo.git",
+  "srcTargetRevision": "main",
+  "labels": {
+    "codefresh_io_entity": "git-source",
+    "codefresh_io_internal": "false"
+  },
+  "annotations": null,
+  "exclude": "",
+  "include": ""
+}
