@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: testecr
+  labels:
+    codefresh.io/entity: integration-config
+    codefresh.io/integration-type: registry.ecr
+data:
+  region: us-east-2
+  role_arn: testtesttest
