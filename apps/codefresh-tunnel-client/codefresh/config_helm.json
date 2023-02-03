@@ -8,7 +8,7 @@
   "srcTargetRevision": "0.1.8",
   "labels": {
     "codefresh_io_entity": "component",
-    "codefresh_io_internal": "true"
+    "codefresh_io_internal": "false"
   },
   "annotations": {
     "argocd_argoproj_io_sync-wave": "0"
